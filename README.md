@@ -185,4 +185,5 @@ Feedstock Maintainers
 =====================
 
 * [@Hind-M](https://github.com/Hind-M/)
+* [@JohanMabille](https://github.com/JohanMabille/)
 
