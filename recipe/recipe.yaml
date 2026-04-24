@@ -1,5 +1,5 @@
 context:
-  version: "1.0.1"
+  version: "1.0.2"
   build_number: 0
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/sparrow-org/sparrow-ipc/archive/refs/tags/${{ version }}.tar.gz
-  sha256: b54eb3c07f0fa977560abc6086b5fcc314cae28999d1cfeaecb4ef64f353ced2
+  sha256: 9c8b13806528a26f48be6271d56ae0a5540e3772d9fea4ef7d5b4838e32424e9
 
 build:
   script: build
@@ -62,8 +62,8 @@ about:
     modern C++ memory management and data structures.
   license: BSD-3-Clause AND Apache-2.0
   license_file:
-     - LICENSE
-     - ARROW_LICENSE.txt
+    - LICENSE
+    - ARROW_LICENSE.txt
   documentation: https://sparrow-org.github.io/sparrow-ipc/
   repository: https://github.com/sparrow-org/sparrow-ipc
 
