@@ -14,3 +14,7 @@ if errorlevel 1 exit 1
 cmake --install build/
 if errorlevel 1 exit 1
 
+REM TODO: remove this when it has been fixed upstream
+REM Remove flatbuffers generated headers (implementation detail, not part of public API)
+rd /s /q "%PREFIX%\Library\include\sparrow_ipc\flatbuffers_generated"
+if errorlevel 1 exit 1

@@ -35,6 +35,7 @@ requirements:
 tests:
   - package_contents:
       include:
+        - sparrow_ipc.hpp
         - sparrow_ipc/serialize.hpp
         - sparrow_ipc/deserialize.hpp
         - sparrow_ipc/config/sparrow_ipc_version.hpp
@@ -47,11 +48,13 @@ tests:
           - test -f ${PREFIX}/share/cmake/sparrow-ipc/sparrow-ipcConfig.cmake
           - test -f ${PREFIX}/share/cmake/sparrow-ipc/sparrow-ipcConfigVersion.cmake
           - test -f ${PREFIX}/share/cmake/sparrow-ipc/sparrow-ipcTargets.cmake
+          - test ! -e "${PREFIX}/include/sparrow_ipc/flatbuffers_generated"
       - if: win
         then:
           - if not exist %LIBRARY_PREFIX%\share\cmake\sparrow-ipc\sparrow-ipcConfig.cmake (exit 1)
           - if not exist %LIBRARY_PREFIX%\share\cmake\sparrow-ipc\sparrow-ipcConfigVersion.cmake (exit 1)
           - if not exist %LIBRARY_PREFIX%\share\cmake\sparrow-ipc\sparrow-ipcTargets.cmake (exit 1)
+          - if exist "%PREFIX%\Library\include\sparrow_ipc\flatbuffers_generated" (exit 1)
 
 about:
   homepage: https://github.com/sparrow-org/sparrow-ipc
