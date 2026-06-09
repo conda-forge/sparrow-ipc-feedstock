@@ -17,3 +17,7 @@ cmake ${CMAKE_ARGS} \
     $SRC_DIR
 
 make -j${CPU_COUNT} install
+
+# TODO: remove this when it has been fixed upstream
+# Remove flatbuffers generated headers (implementation detail, not part of public API)
+rm -rf "${PREFIX}/include/sparrow_ipc/flatbuffers_generated"
