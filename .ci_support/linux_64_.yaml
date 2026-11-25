@@ -21,4 +21,4 @@ lz4_c:
 target_platform:
 - linux-64
 zstd:
-- '1.5'
+- '1.6'

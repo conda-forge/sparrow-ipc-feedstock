@@ -11,7 +11,7 @@ channel_targets:
 cxx_compiler:
 - clangxx
 cxx_compiler_version:
-- '21'
+- '22'
 flatbuffers:
 - 25.9.23
 lz4_c:
@@ -21,4 +21,4 @@ macos_machine:
 target_platform:
 - osx-64
 zstd:
-- '1.5'
+- '1.6'
