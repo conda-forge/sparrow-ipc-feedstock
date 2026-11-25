@@ -5,7 +5,9 @@ channel_sources:
 channel_targets:
 - conda-forge main
 cxx_compiler:
-- vs2022
+- vs
+cxx_compiler_version:
+- '2022'
 flatbuffers:
 - 25.9.23
 lz4_c:
@@ -13,4 +15,4 @@ lz4_c:
 target_platform:
 - win-64
 zstd:
-- '1.5'
+- '1.6'
